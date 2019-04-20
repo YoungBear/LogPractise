@@ -1,5 +1,8 @@
 package com.ysx.example.logpractise;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * @author youngbear
  * @email youngbear@aliyun.com
@@ -9,7 +12,15 @@ package com.ysx.example.logpractise;
  * @description
  */
 public class Hello {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Hello.class);
+
     public static void main(String[] args) {
-        System.out.println("Hello Logs");
+        LOGGER.trace("trace log");
+        LOGGER.debug("debug log");
+        LOGGER.info("info log");
+        LOGGER.warn("warn log");
+        LOGGER.error("error log");
+
     }
 }
