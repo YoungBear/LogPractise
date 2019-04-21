@@ -12,6 +12,8 @@
 
 ## 2. 添加日志配置
 
+显示在控制台，指定显示格式，并且指定存储在本地路径，并按照时间分割。
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
@@ -55,7 +57,7 @@
 
 ## 3. 写日志
 
-```xml
+```java
 package com.ysx.example.logpractise;
 
 import org.slf4j.Logger;
@@ -84,4 +86,8 @@ public class Hello {
 }
 
 ```
+
+
+
+# [Demo github地址](<https://github.com/YoungBear/LogPractise>)
 
